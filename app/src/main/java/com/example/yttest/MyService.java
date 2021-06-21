@@ -73,12 +73,6 @@ public class MyService extends Service {
 
         timer.scheduleAtFixedRate(task,0,10000);*/
 
-//        AlarmManager mgr=(AlarmManager)getSystemService(this.ALARM_SERVICE);
-//        Intent i=new Intent(this, MainActivity.class);
-//        PendingIntent pi=PendingIntent.getBroadcast(this, 0, i, 0);
-//
-//        mgr.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, this.elapsedRealtime(), PERIOD, pi);
-
         timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override
